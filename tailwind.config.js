@@ -7,6 +7,9 @@ export default {
         gray: 'rgba(38, 38, 38, 0.6)',
         placeholder: '#B8C2CE',
       },
+      gridTemplateColumns: {
+        mainSection: '1fr 350px',
+      },
     },
   },
   plugins: [],
