@@ -1,11 +1,18 @@
-import racingCar from '/public/racingCar.png';
+type propsType = {
+  title: string;
+  type: string;
+  date: string;
+  imgURL: string;
+};
 
-function NewsCard() {
+function NewsCard({ title, type, date, imgURL }: propsType) {
   return (
-    <div className={`mt-4 relative min-h-60 flex flex-col justify-end bg-[url('${racingCar}')] bg-no-repeat bg-cover rounded-lg overflow-hidden`}>
+    <div className={`mt-4 relative min-h-60 flex flex-col justify-end bg-no-repeat bg-cover rounded-lg overflow-hidden`} style={{ backgroundImage: `url('${imgURL}')` }}>
       <div className="p-3 bg-gradient-to-t from-[#F2F2F2] via-[#F2F2F2] h-28 flex flex-col justify-end">
-        <h5 className="text-placeholder">INDYCAR - 03 June 2023</h5>
-        <h4 className="text-black text-lg">IndyCar Detroit: Dixon quickest in second practice</h4>
+        <h5 className="text-gray">
+          {type} - {date}
+        </h5>
+        <h4 className="text-black text-xl">{title}</h4>
       </div>
     </div>
   );
