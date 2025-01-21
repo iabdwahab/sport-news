@@ -12,7 +12,7 @@ function NewsCard({ title, type, date, imgURL }: propsType) {
         <h5 className="text-gray">
           {type} - {date}
         </h5>
-        <h4 className="text-black text-xl">{title}</h4>
+        <h4 className="text-black text-xl font-bold">{title}</h4>
       </div>
     </div>
   );
