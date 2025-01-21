@@ -1,7 +1,11 @@
 import Header from './components/header/Header';
 
 function App() {
-  return <Header />;
+  return (
+    <div className="relative min-h-screen">
+      <Header />
+    </div>
+  );
 }
 
 export default App;
