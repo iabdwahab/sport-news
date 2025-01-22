@@ -1,4 +1,5 @@
 import Categories from './components/category/Categories';
+import ClubsRanking from './components/clubs_ranking/ClubsRanking';
 import Container from './components/Container';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
@@ -14,8 +15,9 @@ function App() {
       <Categories />
       <Trending />
       <Slider />
-      <Container className="grid grid-cols-2">
+      <Container className="grid grid-cols-1 xl:grid-cols-2">
         <Recent />
+        <ClubsRanking />
       </Container>
     </div>
   );

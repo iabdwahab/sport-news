@@ -11,6 +11,7 @@ export default {
       gridTemplateColumns: {
         mainSection: '1fr 350px',
         auto300: 'repeat(auto-fit, minmax(300px, 1fr))',
+        auto500: 'repeat(auto-fit, minmax(500px, 1fr))',
         categories: 'repeat(auto-fit, minmax(250px, 1fr))',
       },
     },

@@ -28,10 +28,10 @@ function Recent() {
   ];
 
   return (
-    <div>
+    <section>
       <Container>
         <SectionTitle>Recent News</SectionTitle>
-        <div className="grid grid-cols-auto300 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           <RecentHero />
           <div className="grid gap-3 bg-placeholder p-4 rounded-lg">
             {recentNews.map((recentItem, index) => (
@@ -47,7 +47,7 @@ function Recent() {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 }
 export default Recent;
