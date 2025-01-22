@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         gray: 'rgba(38, 38, 38, 0.6)',
-        placeholder: '#B8C2CE',
+        placeholder: '#EBEEF3',
       },
       gridTemplateColumns: {
         mainSection: '1fr 350px',
