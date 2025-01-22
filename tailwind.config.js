@@ -9,6 +9,7 @@ export default {
       },
       gridTemplateColumns: {
         mainSection: '1fr 350px',
+        todatNews: 'repeat(auto-fit, minmax(300px, 1fr))',
       },
     },
   },
