@@ -5,6 +5,7 @@ import footballCategory from '/public/football-category.png';
 import basketballCategory from '/public/basketball-category.png';
 import carSportCategory from '/public/car-sport-category.png';
 import tableTennisCategory from '/public/table-tennis-category.png';
+import SectionTitle from '../global/SectionTitle';
 
 function Categories() {
   const categoriesList = [
@@ -35,7 +36,7 @@ function Categories() {
   return (
     <section>
       <Container className="py-4">
-        <h3 className="font-medium text-2xl">Category</h3>
+        <SectionTitle>Category</SectionTitle>
         <div className="grid grid-cols-categories gap-4 mt-4">{categoriesElements}</div>
       </Container>
     </section>
