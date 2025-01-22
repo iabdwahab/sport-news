@@ -34,7 +34,7 @@ function DesktopNavbar() {
 
 function MobileNavbar({ navMobileVisible, setNavMobileVisible }: propsType) {
   return (
-    <div className={`md:hidden ${navMobileVisible ? 'block' : 'hidden'} absolute top-0 right-0 text-black bg-[#eee] w-[calc(100%-40px)] h-full min-h-fit px-4 pb-4`}>
+    <div className={`md:hidden ${navMobileVisible ? 'block' : 'hidden'} absolute z-50 top-0 right-0 text-black bg-[#eee] w-[calc(100%-40px)] h-full min-h-fit px-4 pb-4`}>
       <div className="h-[72px] flex items-center justify-end">
         <button onClick={() => setNavMobileVisible(false)}>
           <img src={closeIcon} alt="Click to Hide Navigation" className="w-6" />
