@@ -4,6 +4,7 @@ import ClubsRanking from './components/clubs_ranking/ClubsRanking';
 import Container from './components/Container';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
+import Newsletter from './components/newsletter/Newsletter';
 import Recent from './components/recent/Recent';
 import Slider from './components/slider/Slider';
 import Trending from './components/trending/Trending';
@@ -21,6 +22,7 @@ function App() {
         <ClubsRanking />
       </Container>
       <Articles />
+      <Newsletter />
     </div>
   );
 }
