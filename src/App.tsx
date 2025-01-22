@@ -1,3 +1,4 @@
+import Articles from './components/articles/Articles';
 import Categories from './components/category/Categories';
 import ClubsRanking from './components/clubs_ranking/ClubsRanking';
 import Container from './components/Container';
@@ -19,6 +20,7 @@ function App() {
         <Recent />
         <ClubsRanking />
       </Container>
+      <Articles />
     </div>
   );
 }
