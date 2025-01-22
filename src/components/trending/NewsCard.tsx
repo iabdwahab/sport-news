@@ -7,13 +7,13 @@ type propsType = {
 
 function NewsCard({ children, imgURL }: propsType) {
   return (
-    <div className="grid grid-cols-[250px,1fr] gap-4">
+    <div className="grid lg:grid-cols-[250px,1fr] gap-4">
       <div>
-        <img src={imgURL} alt="News Image" className="w-full" />
+        <img src={imgURL} alt="News Image" className="w-full h-full object-cover" />
       </div>
       <div className="relative">
         {children}
-        <hr className="bg-[#B8C2CE] my-2 border-none h-[1px] block absolute -bottom-2 w-full" />
+        <hr className="bg-[#B8C2CE] my-2 border-none h-[1px] block absolute max-lg:relative -bottom-3 w-full" />
       </div>
     </div>
   );
