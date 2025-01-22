@@ -6,6 +6,7 @@ export default {
       colors: {
         gray: 'rgba(38, 38, 38, 0.6)',
         placeholder: '#EBEEF3',
+        disabled: '#EBEEF3',
       },
       gridTemplateColumns: {
         mainSection: '1fr 350px',

@@ -1,56 +1,45 @@
 import { useState } from 'react';
 import Container from '../Container';
-import sliderFootball from '/public/slider-football.png';
-import sliderAmericanFootball from '/public/slider-american-football.jpg';
+
+import arrowLeft from '/public/arrow-left.svg';
+import arrowRight from '/public/arrow-right.svg';
+import ControlButton from './ControlButton';
+import { sliderNews } from './data';
+import Indicator from './Indicator';
 
 function Slider() {
-  const [slideNumber, setSlideNumber] = useState(1);
+  const [slideNumber, setSlideNumber] = useState(0);
 
-  const data = [
-    {
-      imgURL: sliderFootball,
-      title: 'Lionel Messi Leaving Ligue 1 Team Paris Saint-Germain, Club Confirms',
-      description: 'The EuroLeague Finals Top Scorer is the individual award for the player that gained the highest points in the EuroLeague Finals',
-      date: 'Agence France-Presse - 04 June 2023',
-      type: 'Football',
-    },
-    {
-      imgURL: sliderAmericanFootball,
-      title: 'NFL selects veteran referee Ron Torbert to lead officiating crew for Super Bowl LIX',
-      description: "Though the participants for Super Bowl LIX in New Orleans won't be decided until Sunday, the officials were announced by the NFL on Tuesday.",
-      date: 'American Football - 21 Jan 2025',
-      type: 'American Football',
-    },
-    {
-      imgURL: sliderFootball,
-      title: 'Lionel Messi Leaving Ligue 1 Team Paris Saint-Germain, Club Confirms',
-      description: 'The EuroLeague Finals Top Scorer is the individual award for the player that gained the highest points in the EuroLeague Finals',
-      date: 'Agence France-Presse - 04 June 2023',
-      type: 'Football',
-    },
-    {
-      imgURL: sliderAmericanFootball,
-      title: 'NFL selects veteran referee Ron Torbert to lead officiating crew for Super Bowl LIX',
-      description: "Though the participants for Super Bowl LIX in New Orleans won't be decided until Sunday, the officials were announced by the NFL on Tuesday.",
-      date: 'American Football - 21 Jan 2025',
-      type: 'American Football',
-    },
-  ];
+  function goBack() {
+    setSlideNumber((prevValue) => (prevValue > 0 ? prevValue - 1 : prevValue));
+  }
+
+  function goNext() {
+    setSlideNumber((prevValue) => (prevValue < sliderNews.length - 1 ? prevValue + 1 : prevValue));
+  }
 
   return (
     <div>
-      <Container className="py-4">
-        <div className="relative z-50 min-h-96 bg-no-repeat bg-cover bg-center p-4 text-white" style={{ backgroundImage: `url('${data[slideNumber].imgURL}')` }}>
-          <span className="absolute w-full h-full top-0 left-0 bg-[#00000095] -z-10"></span>
-          <h3 className="text-white border py-2 px-4 rounded-md w-fit">{data[slideNumber].type}</h3>
-          <div className="absolute bottom-4 max-w-3xl">
-            <h5 className="max-md:text-sm">{data[slideNumber].date}</h5>
-            <h4 className="font-bold text-2xl md:text-4xl">{data[slideNumber].title}</h4>
-            <h5 className="max-md:text-sm">{data[slideNumber].description}</h5>
+      <Container>
+        <div className="bg-placeholder">
+          <div className="relative z-50 min-h-96 bg-no-repeat bg-cover maxlg:bg-center p-4 text-white" style={{ backgroundImage: `url('${sliderNews[slideNumber].imgURL}')` }}>
+            <span className="absolute w-full h-full top-0 left-0 bg-[#00000095] -z-10"></span>
+            <h3 className="text-white border py-2 px-4 rounded-md w-fit">{sliderNews[slideNumber].type}</h3>
+            <div className="absolute bottom-4 max-w-3xl">
+              <h5 className="max-md:text-sm">{sliderNews[slideNumber].date}</h5>
+              <h4 className="font-bold text-2xl md:text-4xl">{sliderNews[slideNumber].title}</h4>
+              <h5 className="max-md:text-sm">{sliderNews[slideNumber].description}</h5>
+            </div>
+          </div>
+          <div className="w-fit ml-auto flex items-center max-md:mx-auto gap-6 py-4 mb-8">
+            <ControlButton imgURL={arrowLeft} onClick={goBack} disabled={slideNumber <= 0} />
+            <Indicator sliderNews={sliderNews} slideNumber={slideNumber} />
+            <ControlButton imgURL={arrowRight} onClick={goNext} disabled={slideNumber >= sliderNews.length - 1} />
           </div>
         </div>
       </Container>
     </div>
   );
 }
+
 export default Slider;
