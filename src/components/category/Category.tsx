@@ -7,7 +7,7 @@ type prposType = {
 function Category({ title, imgURL, titleTop }: prposType) {
   return (
     <div>
-      {titleTop ? (
+      {!titleTop ? (
         <>
           <div className="bg-[#eee] rounded-md">
             <h4 className="gradient-text font-black text-4xl text-center uppercase flex justify-center items-center py-4">{title}</h4>

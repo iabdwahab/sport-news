@@ -26,13 +26,17 @@ function Categories() {
     },
   ];
 
-  const categoriesElements = categoriesList.map((category, index) => <Category key={index} titleTop={index % 2 === 0} {...category} />);
+  const categoriesElements = categoriesList.map((category, index) => {
+    const titleTop = index % 2 == 0 && window.innerWidth > 768;
+
+    return <Category key={index} titleTop={titleTop} {...category} />;
+  });
 
   return (
     <section>
       <Container className="py-4">
         <h3 className="font-medium text-2xl">Category</h3>
-        <div className="grid grid-cols-4 gap-12 mt-4">{categoriesElements}</div>
+        <div className="grid grid-cols-categories gap-4 mt-4">{categoriesElements}</div>
       </Container>
     </section>
   );
