@@ -3,7 +3,7 @@ import Container from '../Container';
 import Logo from './Logo';
 import Navbar from './Navbar';
 import Search from './Search';
-import menuIcon from '/public/menu.svg';
+import menuIcon from '/public/imgs/global/menu.svg';
 
 function Header() {
   const [navMobileVisible, setNavMobileVisible] = useState(false);

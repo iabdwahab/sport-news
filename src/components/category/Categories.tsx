@@ -1,10 +1,10 @@
 import Container from '../Container';
 import Category from './Category';
 
-import footballCategory from '/public/football-category.png';
-import basketballCategory from '/public/basketball-category.png';
-import carSportCategory from '/public/car-sport-category.png';
-import tableTennisCategory from '/public/table-tennis-category.png';
+import footballCategory from '/public/imgs/category/category-football.png';
+import basketballCategory from '/public/imgs/category/category-basketball.png';
+import carSportCategory from '/public/imgs/category/category-car-sport.png';
+import tableTennisCategory from '/public/imgs/category/category-table-tennis.png';
 import SectionTitle from '../global/SectionTitle';
 
 function Categories() {

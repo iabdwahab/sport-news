@@ -1,6 +1,6 @@
 import NewsCard from './NewsCard';
-import ethiopianRunner from '/public/ethiopianRunner.jpg';
-import racingCar from '/public/racingCar.jpg';
+import ethiopianRunner from '/public/imgs/main/ethiopian-runners.jpg';
+import racingCar from '/public/imgs/main/racing-car.jpg';
 
 function TodayNews() {
   return (

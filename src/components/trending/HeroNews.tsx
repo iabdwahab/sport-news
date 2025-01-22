@@ -1,4 +1,4 @@
-import trendingHero from '/public/trending-hero.jpg';
+import trendingHero from '/public/imgs/trending/trending-hero.jpg';
 
 function HeroNews() {
   return (

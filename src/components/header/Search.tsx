@@ -1,4 +1,4 @@
-import searchIcon from '/public/searchIcon.svg';
+import searchIcon from '/public/imgs/global/search-icon.svg';
 
 type propsType = {
   navMobileVisible: boolean;

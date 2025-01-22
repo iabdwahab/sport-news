@@ -1,8 +1,7 @@
 import Container from '../Container';
 import SectionTitle from '../global/SectionTitle';
 
-import recentHero from '/public/recent-hero.png';
-import noise from '/public/noise.png';
+import recentHero from '/public/imgs/recent/recent-hero.png';
 
 function Recent() {
   return (

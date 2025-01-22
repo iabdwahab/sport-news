@@ -1,8 +1,8 @@
 import Container from '../Container';
 import MainTitle from './MainTitle';
 import TodayNews from './TodayNews';
-import basketball from '/public/basketball.png';
-import heroPlayer from '/public/heroPlayer.png';
+import basketball from '/public/imgs/main/basketball.png';
+import heroPlayer from '/public/imgs/main/hero-player.png';
 
 function Main() {
   return (

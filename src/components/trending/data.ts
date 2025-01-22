@@ -1,6 +1,6 @@
-import trendingHorse from '/public/trending-horse.png';
-import trendingCycle from '/public/trending-cycle.png';
-import trendingWrestling from '/public/trending-wrestling.png';
+import trendingHorse from '/public/imgs/trending/trending-horse.png';
+import trendingCycle from '/public/imgs/trending/trending-cycle.png';
+import trendingWrestling from '/public/imgs/trending/trending-wrestling.png';
 
 export const trendingNewsList = [
   {

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Container from '../Container';
 
-import arrowLeft from '/public/arrow-left.svg';
-import arrowRight from '/public/arrow-right.svg';
+import arrowLeft from '/public/imgs/global/arrow-left.svg';
+import arrowRight from '/public/imgs/global/arrow-right.svg';
 import ControlButton from './ControlButton';
 import { sliderNews } from './data';
 import Indicator from './Indicator';

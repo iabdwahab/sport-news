@@ -1,6 +1,6 @@
 import NavLink from './NavLink';
 import Search from './Search';
-import closeIcon from '/public/closeIcon.png';
+import closeIcon from '/public/imgs/global/close-icon.png';
 
 type propsType = {
   navMobileVisible: boolean;

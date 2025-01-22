@@ -1,4 +1,4 @@
-import sportNewsLogo from '/public/logo.svg';
+import sportNewsLogo from '/public/imgs/global/logo.svg';
 
 function Logo() {
   return (

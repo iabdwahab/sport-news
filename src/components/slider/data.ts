@@ -1,5 +1,5 @@
-import sliderFootball from '/public/slider-football.png';
-import sliderAmericanFootball from '/public/slider-american-football.jpg';
+import sliderFootball from '/public/imgs/slider/slider-football.png';
+import sliderAmericanFootball from '/public/imgs/slider/slider-american-football.jpg';
 
 export const sliderNews = [
   {
