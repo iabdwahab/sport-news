@@ -1,6 +1,7 @@
 import Categories from './components/category/Categories';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
+import Slider from './components/slider/Slider';
 import Trending from './components/trending/Trending';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Main />
       <Categories />
       <Trending />
+      <Slider />
     </div>
   );
 }
