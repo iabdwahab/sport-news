@@ -10,7 +10,7 @@ export default {
       },
       gridTemplateColumns: {
         mainSection: '1fr 350px',
-        todayNews: 'repeat(auto-fit, minmax(300px, 1fr))',
+        auto300: 'repeat(auto-fit, minmax(300px, 1fr))',
         categories: 'repeat(auto-fit, minmax(250px, 1fr))',
       },
     },
