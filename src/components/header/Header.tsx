@@ -9,7 +9,7 @@ function Header() {
   const [navMobileVisible, setNavMobileVisible] = useState(false);
 
   return (
-    <header className="border-b border-[#eee]">
+    <header className="border-b border-[#eee] bg-white">
       <Container className="h-[72px] flex items-center justify-between">
         <Logo />
         <Navbar navMobileVisible={navMobileVisible} setNavMobileVisible={setNavMobileVisible} />

@@ -6,7 +6,7 @@ import heroPlayer from '/public/heroPlayer.png';
 
 function Main() {
   return (
-    <main className="relative z-10 bg-[#F9FAFC]">
+    <main className="relative z-10">
       <Container className="relative grid lg:grid-cols-mainSection gap-2 pt-10 pb-16">
         <img src={basketball} alt="Basketball image" className="absolute -z-10 top-32 -left-5 opacity-10 w-80 max-md:hidden" />
         <div className="relative">
