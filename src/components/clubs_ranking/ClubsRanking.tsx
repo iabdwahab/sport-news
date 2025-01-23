@@ -7,7 +7,7 @@ function ClubsRanking() {
   return (
     <section className="max-xl:mt-4">
       <Container className="h-full flex flex-col">
-        <SectionTitle>Club Ranking</SectionTitle>
+        <SectionTitle>Clubs Ranking</SectionTitle>
         <div className="w-full overflow-x-auto grow">
           <table className="w-full h-full  table-auto bg-placeholder rounded-md ">
             <TableHead />

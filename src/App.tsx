@@ -17,7 +17,7 @@ function App() {
       <Categories />
       <Trending />
       <Slider />
-      <Container className="grid grid-cols-1 xl:grid-cols-2">
+      <Container className="grid grid-cols-1 xl:grid-cols-2 px-0">
         <Recent />
         <ClubsRanking />
       </Container>
