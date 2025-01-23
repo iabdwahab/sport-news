@@ -11,7 +11,7 @@ import Trending from './components/trending/Trending';
 
 function App() {
   return (
-    <div className="relative min-h-screen mb-8">
+    <div className="relative min-h-screen">
       <Header />
       <Main />
       <Categories />

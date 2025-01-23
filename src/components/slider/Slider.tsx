@@ -20,7 +20,7 @@ function Slider() {
 
   return (
     <div>
-      <Container>
+      <Container className="max-lg:px-0">
         <div className="bg-placeholder">
           <div className="relative z-50 min-h-96 bg-no-repeat bg-cover maxlg:bg-center p-4 text-white" style={{ backgroundImage: `url('${sliderNews[slideNumber].imgURL}')` }}>
             <span className="absolute w-full h-full top-0 left-0 bg-[#00000095] -z-10"></span>
@@ -31,7 +31,7 @@ function Slider() {
               <h5 className="max-md:text-sm">{sliderNews[slideNumber].description}</h5>
             </div>
           </div>
-          <div className="w-fit ml-auto flex items-center max-md:mx-auto gap-6 py-4 mb-8">
+          <div className="w-fit ml-auto px-4 flex items-center max-md:mx-auto gap-6 py-4 mb-8">
             <ControlButton imgURL={arrowLeft} onClick={goBack} disabled={slideNumber <= 0} />
             <Indicator sliderNews={sliderNews} slideNumber={slideNumber} />
             <ControlButton imgURL={arrowRight} onClick={goNext} disabled={slideNumber >= sliderNews.length - 1} />

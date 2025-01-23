@@ -36,7 +36,9 @@ function Categories() {
   return (
     <section>
       <Container className="py-4">
-        <SectionTitle>Category</SectionTitle>
+        <SectionTitle>
+          <span className="max-md:bg-black max-md:text-white max-md:block py-3 px-2 rounded-md">Category</span>
+        </SectionTitle>
         <div className="grid grid-cols-categories gap-4 mt-4">{categoriesElements}</div>
       </Container>
     </section>

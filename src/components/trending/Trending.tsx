@@ -5,7 +5,7 @@ import TrendingNews from './TrendingNews';
 function Trending() {
   return (
     <section className="rounded-md">
-      <Container className="grid lg:grid-cols-2 py-4">
+      <Container className="grid lg:grid-cols-2 py-4 max-lg:px-0">
         <TrendingNews />
         <HeroNews />
       </Container>

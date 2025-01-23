@@ -4,7 +4,7 @@ import NewsCard from './NewsCard';
 
 function TrendingNews() {
   return (
-    <div className="bg-placeholder p-6">
+    <div className="bg-placeholder p-6 max-lg:px-2">
       <SectionTitle>Trending News</SectionTitle>
       <div className="mt-4 grid gap-4">
         {trendingNewsList.map((news, index) => (
