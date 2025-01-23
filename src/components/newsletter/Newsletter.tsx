@@ -5,8 +5,8 @@ import vector from '/public/imgs/newsletter/vector.svg';
 
 function Newsletter() {
   return (
-    <section>
-      <Container className="grid md:grid-cols-2 gap-10 bg-placeholder md:px-8 pt-4">
+    <section className="bg-placeholder">
+      <Container className="grid md:grid-cols-2 gap-10 bg-placeholder pt-4">
         <div className="grid content-center gap-4">
           <h2 className="gradient-text max-md:text-center uppercase font-black text-3xl md:text-5xl lg:text-7xl">
             NEWSLETTER <br /> SUBSCRIBTION
